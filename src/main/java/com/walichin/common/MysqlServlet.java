@@ -22,7 +22,7 @@ String query = request.getParameter("query");
 
 try {
 Class.forName("com.mysql.jdbc.Driver");
-conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/archivoi_photo", "archivoi_photo", "c0lm1ll0");
+conn = DriverManager.getConnection("jdbc:mysql://172.16.0.22:3306/archivoi_photo", "archivoi_photo", "c0lm1ll0");
 System.out.println("success");
 
 // STEP 4: Execute a query
@@ -38,7 +38,7 @@ sql = sql + " where name like '%" + query + "%'";
 ResultSet rs = stmt.executeQuery(sql);
 
 PrintWriter out = response.getWriter();
-out.println("<h1>   List of Users  </h1>");
+out.println("<h1> !! List of Users !! </h1>");  
 
 if (query != null && !"".equals(query)) {
 out.println("<h2> query: "+ query +"</h2>");
