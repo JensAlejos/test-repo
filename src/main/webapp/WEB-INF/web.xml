@@ -5,8 +5,8 @@
     <servlet-name>walichin</servlet-name>
     <servlet-class>
       com.walichin.common.SimpleServlet
-    </servlet-class>
-  </servlet>
+    </servlet-class> 
+  </servlet> 
   <servlet-mapping>
     <servlet-name>walichin</servlet-name>
     <url-pattern>/simple</url-pattern>
