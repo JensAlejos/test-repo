@@ -1,0 +1,53 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>Archetype Created Web Application</display-name>
+  
+  <servlet>
+    <servlet-name>walichin</servlet-name>
+    <servlet-class>
+      com.walichin.common.SimpleServlet
+    </servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>walichin</servlet-name>
+    <url-pattern>/simple</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>raquelita</servlet-name>
+    <servlet-class>
+      com.walichin.common.SecondServlet
+    </servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>raquelita</servlet-name>
+    <url-pattern>/second</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>MysqlServlet</servlet-name>
+  	<servlet-class>com.walichin.common.MysqlServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>MysqlServlet</servlet-name>
+  	<url-pattern>/search</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>UserServlet</servlet-name>
+  	<servlet-class>com.walichin.common.UserServlet
+  	</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>UserServlet</servlet-name>
+  	<url-pattern>/save_user</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
+
+
